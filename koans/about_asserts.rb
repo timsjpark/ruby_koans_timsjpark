@@ -22,7 +22,7 @@ class AboutAsserts < Neo::Koan
     expected_value = 2
     actual_value = 1 + 1
 
-    assert expected_value == actual_value
+    assert expected_value == actual_value, "1 + 1 =/= #{expected_value}. Try again."
   end
 
   # Some ways of asserting equality are better than others.
@@ -30,7 +30,7 @@ class AboutAsserts < Neo::Koan
     expected_value = 2
     actual_value = 1 + 1
 
-    assert_equal expected_value, actual_value
+    assert_equal expected_value, actual_value, "1 + 1 =/= #{expected_value}. Try again."
   end
 
   # Sometimes we will ask you to fill in the values

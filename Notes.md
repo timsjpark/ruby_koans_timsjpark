@@ -22,3 +22,10 @@
   do the same thing as they both return the same result.
 
 ### Objects
+
+* Everything is an object. EVERYTHING!
+
+* All objects have a unique object ID
+
+* Some objects, like numbers, have a fixed object ID.
+  For example, the object_ID for `0` is `1`.

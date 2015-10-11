@@ -29,3 +29,9 @@
 
 * Some objects, like numbers, have a fixed object ID.
   For example, the object_ID for `0` is `1`.
+
+### Arrays
+
+* What does : do?
+
+* You can search from the end of an array with negative index values [-1]

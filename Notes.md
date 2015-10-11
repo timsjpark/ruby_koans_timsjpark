@@ -1,6 +1,6 @@
 # Notes from Ruby Koans exercises
 
-### About asserts
+### Asserts
 
 * Asserts simply evaluate an expression to test true/false.
 
@@ -9,7 +9,7 @@
 
 * An effective way to write asserts is with the 'assert_equal' message.
 
-### About nil
+### Nil
 
 * Nil is an object that is equivalent to NULL in other languages. It almost
   acts like an 'empty' object.
@@ -20,3 +20,12 @@
 
 * In terms of observable effect, `object.nil?` and `object == nil` will
   do the same thing as they both return the same result.
+
+### Objects
+
+* Everything is an object. EVERYTHING!
+
+* All objects have a unique object ID
+
+* Some objects, like numbers, have a fixed object ID.
+  For example, the object_ID for `0` is `1`.

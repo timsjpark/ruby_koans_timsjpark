@@ -48,3 +48,14 @@
   
 * Without the splat operator (*) all extra values in parallel assignments
   will go untouched `a, *b = [x, y, z]`.
+
+### Hashes
+
+* Hashes assign values to a key, which is a symbol. You can find the elements
+  of a hash with their key (arrays use indices).
+
+* The `fetch` method might be preferable to calling a key with `hash[:key]`
+  because fetch will return a `KeyError` if the key doesn't exist where
+  calling the key index will return `nil`.
+  
+* 

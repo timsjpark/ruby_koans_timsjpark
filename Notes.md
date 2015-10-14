@@ -29,3 +29,14 @@
 
 * Some objects, like numbers, have a fixed object ID.
   For example, the object_ID for `0` is `1`.
+
+### Arrays
+
+* The colon, `:` denotes a symbol in Ruby. Symbols have string and integer 
+  values and cannot be changed like variables. 
+
+* You can search from the end of an array with negative index values [-1]
+
+* The array methods `unshift` and `shift` will add and remove items at the
+  beginning of the array. `push` and `pop` are also methods that add and
+  remove items, but only at the end of the array.

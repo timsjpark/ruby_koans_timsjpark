@@ -67,3 +67,19 @@
 * You can also set default hash values for each new key with a block of code.
   `hash = Hash.new {|hash, key| hash[key] = [] }`. Now, anytime you create a
   new key, it will default to an empty array if you don't pass it a value.
+
+### Strings
+
+* If you have tricky strings with lots of special characters, you can deal with
+  them by using flexible quotes. `string = %!Put some stuff in here!`.
+  
+* Using HEREDOC is a slightly better way to print multiple lines because you
+  won't end up with a leading `\n` like you do with flexible strings.
+  
+* You can use the shovel operator (`<<`) or the plus-equals (`+=`) to concatenate
+  to a string. Ruby programmers tend to favor the shovel operator because it will
+  change all objects that are also equal to the modified object.
+
+* Double-quoted strings will interpret escape characters.
+
+* Strings all have a unique object ID, like everything else in Ruby.

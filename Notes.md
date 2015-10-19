@@ -83,3 +83,18 @@
 * Double-quoted strings will interpret escape characters.
 
 * Strings all have a unique object ID, like everything else in Ruby.
+
+### Symbols
+
+* Symbols are internal objects whose object ID remains the same, even when it
+  is assigned to different variables.
+  
+* Method names get internally stored as symbols.
+
+* Symbols can be made from strings and will retain the same object ID. However, if
+  you convert a symbol to a string, the object ID will change.
+  
+* You can use interpolation to create symbols.
+ 
+* Because symbols are not strings, you can't use interesting string methods on
+  symbols, such as `.reverse.` or the `+` method.

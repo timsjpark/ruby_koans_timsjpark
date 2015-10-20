@@ -180,3 +180,14 @@ end
 
 test(b: 5, a: 6) => 1
 ```
+
+### Constants
+
+* Constants are a way to permanently assign values in a program. Constants can be
+  called by their relative path, `CONSTANT`, or their absolute path, `::CONSTANT`.
+  
+* Nested classes inherit constants from their enclosing classes and subclasses
+  inherit constants from their parent classes.
+
+* If you have a subclass that is also nested within a high class, that nested subclass
+  will inherit constants from the enclosing class, NOT the parent class.

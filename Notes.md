@@ -157,3 +157,12 @@
 > * `.sub` is like find and replace.
 
 > * `.gsub` is like find and replace all.
+
+### Methods
+
+* If you use the `*` character for the arguments of a method, it will
+  allow you to pass in as many arguments as you want.
+  
+* You can set methods to be private within a class by using the private method.
+  If your method is called `test`, you can set it as `private :test`. You can also
+  simply write `private` in a class and then set all of your private methods below.

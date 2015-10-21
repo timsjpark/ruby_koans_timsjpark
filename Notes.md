@@ -48,3 +48,22 @@
   
 * Without the splat operator (*) all extra values in parallel assignments
   will go untouched `a, *b = [x, y, z]`.
+
+### Hashes
+
+* Hashes assign values to a key, which is a symbol. You can find the elements
+  of a hash with their key (arrays use indices).
+
+* The `fetch` method might be preferable to calling a key with `hash[:key]`
+  because fetch will return a `KeyError` if the key doesn't exist where
+  calling the key index will return `nil`.
+  
+* You can set default hash values -- `x = Hash.new('default')`. You can also
+  set a default hash object -- `x = Hash.new('')`. If you set a default hash
+  object, you can add to that object with a redirect method, much like the
+  one in command line -- `x[1] << 'first_string'` - in this case, the `[1]`
+  key isn't really doing anything, but it's required or else ruby will complain.
+  
+* You can also set default hash values for each new key with a block of code.
+  `hash = Hash.new {|hash, key| hash[key] = [] }`. Now, anytime you create a
+  new key, it will default to an empty array if you don't pass it a value.

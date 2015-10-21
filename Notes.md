@@ -40,3 +40,11 @@
 * The array methods `unshift` and `shift` will add and remove items at the
   beginning of the array. `push` and `pop` are also methods that add and
   remove items, but only at the end of the array.
+
+### Array Assignment
+
+* You can create multiple, parallel array assignments with the code
+  formatted like `a, b = [x, y]`.
+  
+* Without the splat operator (*) all extra values in parallel assignments
+  will go untouched `a, *b = [x, y, z]`.

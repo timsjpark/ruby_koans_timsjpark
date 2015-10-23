@@ -223,3 +223,21 @@ test(b: 5, a: 6) => 1
 
 * The `Array.inject` method can be very useful in applying operations over
   all of the elements in an array. Read RubyDoc for details on syntax/use.
+
+### Blocks
+
+* Methods can take curly bracket blocks, arguments, and even do-end blocks. In
+  fact, methods can detect if they have been called with a block using the
+  `block_given?` clause.
+  
+* Blocks are highly adaptable and can be used to modify variables in the code
+  or be called explicitly by assigning the block to an object.
+  
+* Blocks can also be called explicitly into a method by using the `&` assignment.
+
+```
+  def method_with_explicit_block(&block)
+    block.call(10)
+  end
+  method_with_explicit_block { |n| n * 2 } == 20 # returns true
+```

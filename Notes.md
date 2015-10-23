@@ -216,3 +216,10 @@ test(b: 5, a: 6) => 1
   that might help you identify when the problem occurred.
   
 * The `ensure` clause is also helpful to guarantee that some code is run.
+
+### Iteration
+
+* `Array.find` can locate the first element matching a criterion.
+
+* The `Array.inject` method can be very useful in applying operations over
+  all of the elements in an array. Read RubyDoc for details on syntax/use.

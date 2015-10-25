@@ -253,3 +253,13 @@ test(b: 5, a: 6) => 1
 * A good example is the open method, which ensures that files that are open will be
   closed. It can take a filename argument and a block argument so that you can open
   files without worrying about having to close them again.
+
+### Classes
+
+* You can get instance variable outside of a class with `instance_variable_get()`
+
+* You can also rip out instance variables in two ways:
+  `.instance_eval("@name")`
+  `.instance_eval { @name }`
+
+* `attr_accessor` can both read and write instance variables

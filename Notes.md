@@ -241,3 +241,15 @@ test(b: 5, a: 6) => 1
   end
   method_with_explicit_block { |n| n * 2 } == 20 # returns true
 ```
+
+### Sandwich Code
+
+* Sandwich code is code that comes with in three parts: two 'bread' layers and an
+  inner 'meat' layer. The inside of the code can change all the time but the
+  wrapper layers never change. Often, you can write a method that will execute
+  the outer layers of code automatically, allowing you to just worry about the 
+  'meat' of the code.
+  
+* A good example is the open method, which ensures that files that are open will be
+  closed. It can take a filename argument and a block argument so that you can open
+  files without worrying about having to close them again.

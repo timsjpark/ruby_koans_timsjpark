@@ -191,3 +191,12 @@ test(b: 5, a: 6) => 1
 
 * If you have a subclass that is also nested within a high class, that nested subclass
   will inherit constants from the enclosing class, NOT the parent class.
+
+### Control Statements
+
+* `if` statements return values based on the truthiness/falsiness of the tested condition.
+
+* You can use special syntax to return values based on a conditional statement like so:
+  `test ? value_if_true : value_if_false`
+  
+* The `unless` statement can be interpreted as 'if not'. `unless true` == `if != true`

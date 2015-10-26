@@ -275,3 +275,12 @@ test(b: 5, a: 6) => 1
 
 * Modules can hold methods that can be called by classes. However, class methods
   that have the same name as a module method will have greater priority.
+
+### Scope
+
+* You can access classes outside of the current scope by using the scope operator
+  like `String_Module::String`. You can also use the scope operator to force access
+  to the global scope like `::String`
+  
+* Like instance variables, class constants can be accessed explicitly with the
+  `const_get()` method. Class names are actually stored as constants.

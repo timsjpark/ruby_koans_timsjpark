@@ -284,3 +284,44 @@ test(b: 5, a: 6) => 1
   
 * Like instance variables, class constants can be accessed explicitly with the
   `const_get()` method. Class names are actually stored as constants.
+
+### Class Methods
+
+* You can define methods on individual objects instead on an entire object. You can
+  also define methods on an entire class, which are different than instance methods.
+  
+```
+class Dog
+  def wag
+    :instance_level_wag
+  end
+end
+
+def Dog.wag
+  :class_level_wag
+end
+```
+
+* You can even define class level methods within the class itself.
+
+```
+class Dog
+  def Dog.wag
+    :class_level_wag
+  end
+end
+
+class Dog
+  def self.wag
+    :class_level_wag
+  end
+end
+
+class Dog
+  class << self
+    def self.wag
+      :class_level_wag
+    end
+  end
+end
+```

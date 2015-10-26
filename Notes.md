@@ -200,3 +200,7 @@ test(b: 5, a: 6) => 1
   `test ? value_if_true : value_if_false`
   
 * The `unless` statement can be interpreted as 'if not'. `unless true` == `if != true`
+
+### True and False
+
+* `false` and `nil` are falsey. Everything else is truthy.

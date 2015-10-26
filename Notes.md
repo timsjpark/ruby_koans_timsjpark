@@ -270,3 +270,8 @@ test(b: 5, a: 6) => 1
   create new methods that overwrite the behavior of their parent class.
   
 * Subclass can access the behavior of their parent class with `super`.
+
+### Modules
+
+* Modules can hold methods that can be called by classes. However, class methods
+  that have the same name as a module method will have greater priority.

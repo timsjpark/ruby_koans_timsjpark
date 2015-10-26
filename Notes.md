@@ -325,3 +325,10 @@ class Dog
   end
 end
 ```
+
+### Message Passing
+
+* You can send messages to classes in two ways. By calling a method directly like
+  `Class.method` or with `send`, like `Class.send(:method)`.
+  
+* You can see if a class can respond to a sent message with the `respond_to?` method.

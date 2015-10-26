@@ -166,3 +166,17 @@
 * You can set methods to be private within a class by using the private method.
   If your method is called `test`, you can set it as `private :test`. You can also
   simply write `private` in a class and then set all of your private methods below.
+
+### Keyword Arguments
+
+* Keyword arguments allow you to set default values for arguments passed into a method.
+  The big difference with regular defaults is that you can call keyword arguments out
+  of order and the method will still function properly.
+  
+```
+def test (a: 2, b: 1)
+    a - b
+end
+
+test(b: 5, a: 6) => 1
+```

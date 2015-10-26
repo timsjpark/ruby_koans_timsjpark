@@ -98,3 +98,62 @@
  
 * Because symbols are not strings, you can't use interesting string methods on
   symbols, such as `.reverse.` or the `+` method.
+
+### Regular Expressions
+
+* Regular expressions can be used to search for matching content within a string
+  and will return nil if the search fails.
+  
+* You can use special operators to help you be creative with you search parameters.
+
+> * A question mark, `?`, after a search character means that it is optional.
+
+> * A plus, `+`, indicates one or more.
+
+> * An asterisk, `*`, indicates zero or more.
+  
+* Keep in mind that regular expression searches are inherent 'dumb' and 'greedy'.
+  They will return the first match that they come across and will try to fulfill
+  the 'longest' possible match.
+  
+* You can use character classes to search for multiple characters at the same time.
+  In the array `array = ['cat', 'bat']`, you can search for both elements with the
+  regular expression string, `array[/[cb]at/]`. You can also use ranges such as 
+  `[0-9]` and even `[A-Za-z]`.
+  
+* You can negate character classes by using a carat, `^`, within the brackets - 
+  `[^A-Z]` means NOT capital A through Z. You can also use capital letters to negate
+  special character classes - `/d+/` means NOT a string of digits.
+  
+* Some characters get a special shortcut. 
+
+> * `\d` means any digit.
+
+> * `\w` means any alpha-numerical character.
+
+> * `\s` means any whitespace character including tab, `\t`, and newline, `\n`.
+  
+> * `.` means any non-newline character (basically, anything).
+
+* Some characters help orient you in a search.
+
+> * `\A` means the beginning of a string and `\z` means the end of a string.
+
+> * `^` means the beginning of any line and `$` means to the end of any line.
+
+> * `\b` anchors to word boundaries.
+
+* Parentheses, `()`, can be used to group content. `/(ha)+/` would match
+  `'hahaha'` in the string `'ahahahablarg'`. They can also be used to 
+  'capture' grouped content. You can even assign variables to groups with
+  the dollar sign, `$`.
+  
+* A pipe, `|`, means OR.
+  
+* You can use regular expression methods to do wide searches.
+  
+> * `.scan` is like find all.
+
+> * `.sub` is like find and replace.
+
+> * `.gsub` is like find and replace all.

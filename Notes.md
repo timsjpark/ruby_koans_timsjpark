@@ -263,3 +263,10 @@ test(b: 5, a: 6) => 1
   `.instance_eval { @name }`
 
 * `attr_accessor` can both read and write instance variables
+
+### Class Inheritance
+
+* Subclasses inherit properties and methods from their ancestors. Subclasses can
+  create new methods that overwrite the behavior of their parent class.
+  
+* Subclass can access the behavior of their parent class with `super`.

@@ -332,3 +332,7 @@ end
   `Class.method` or with `send`, like `Class.send(:method)`.
   
 * You can see if a class can respond to a sent message with the `respond_to?` method.
+
+### Method: `to_str`
+
+* The `to_str` method can return a string representation of any object

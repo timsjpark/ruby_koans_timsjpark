@@ -1,3 +1,29 @@
+# Greed game class
+class GreedGame
+  attr_reader :players, :scoresheet
+
+  def initialize
+    @players = []
+    @scoresheet = {}
+  end
+
+  def add_player(*args)
+    @players.push(*args)
+    @players.each do |player|
+      @scoresheet[player] = 0
+    end
+  end
+
+  private
+
+  # Error thrown for insufficient players in game
+  class InsufficientPlayersError < Exception
+    def message
+      'You must start the game with at least 2 players!'
+    end
+  end
+end
+
 # DiceSet class
 class DiceSet
   attr_reader :values
@@ -13,7 +39,7 @@ end
 # From about_scoring_project.rb
 
 def score(dice)
-  rolls = { 1 => 0, 2 => 0, 3 => 0, 4 => 0, 5 => 0, 6 => 0 }
+  rolls = {1 => 0, 2 => 0, 3 => 0, 4 => 0, 5 => 0, 6 => 0}
   dice.each { |single_roll| rolls[single_roll] += 1 }
   compute_score(rolls)
 end

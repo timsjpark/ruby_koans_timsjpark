@@ -1,4 +1,4 @@
-require './dice'
+require_relative './dice'
 
 # Greed game class
 class GreedGame

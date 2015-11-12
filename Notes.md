@@ -204,3 +204,15 @@ test(b: 5, a: 6) => 1
 ### True and False
 
 * `false` and `nil` are falsey. Everything else is truthy.
+
+### Exceptions
+
+* You can create your own Exception class that is a subclass of other Exceptions.
+
+* Using a `rescue` clause can allow you output a message based on Exceptions
+  raised during a block of code and prevent termination of the entire program.
+  
+* You can `raise` specific errors in a program and also create a specific message
+  that might help you identify when the problem occurred.
+  
+* The `ensure` clause is also helpful to guarantee that some code is run.
